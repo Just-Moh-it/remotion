@@ -169,7 +169,7 @@ import { MyVideo } from "./remotion/MyVideo";
 export const App: React.FC = () => {
   const playerRef = useRef<PlayerRef>(null);
 
-  const seekToMiddle = useCallback(() => {
+  const seekToFrame60 = useCallback(() => {
     const { current } = playerRef;
     if (!current) {
       return;
